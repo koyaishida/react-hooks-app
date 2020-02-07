@@ -20,6 +20,6 @@ const Event = ({dispatch,event})=>{
       <td><button　type="button" className="btn btn-danger" onClick={handleClickDeleteButton}>削除</button></td>
     </tr>
   )
-
 }
+
 export default Event
