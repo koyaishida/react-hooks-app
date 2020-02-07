@@ -11,10 +11,10 @@ const  App = ()=> {
   //この配列がeventというstate,dispatchがstateを更新する関数
   //この２つをpropsとしてEventFrom,Eventsに渡している
   return (
-    <AppContext.Provider value={"HELLO"}>
+    <AppContext.Provider value={{state,dispatch}}>
       <div className="container-fluid">
-        <EventForm state={state} dispatch={dispatch}/>
-        <Events state={state} dispatch={dispatch}/>
+        <EventForm/>
+        <Events/>
       </div>
     </AppContext.Provider>
   );
