@@ -9,7 +9,8 @@ const  App = ()=> {
   
   const [state,dispatch] = useReducer(reducer,[])
   //この配列がeventというstate,dispatchがstateを更新する関数
-  //この２つをpropsとしてEventFrom,Eventsに渡している
+  //この２つをuseContextでどこからでもアクセス可能にしている
+  
   return (
     <AppContext.Provider value={{state,dispatch}}>
       <div className="container-fluid">

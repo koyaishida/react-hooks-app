@@ -3,11 +3,12 @@ import {DELETE_EVENT} from "../actions"
 import AppContext from "../contexts/AppContext";
 
 const Event = ({event})=>{
-                  //dispatch,eventはpropsとしてApp.jsから受け取る
+    //event=state[]はevents.jsからpropsとして受け取る
   const {dispatch} = useContext(AppContext)
   const id = event.id
 
   const handleClickDeleteButton = ()=>{
+    console.log({event})
     const result = window.confirm(`id : ${id} のイベントを削除してもよろしいですか？`)
     if (result){
       dispatch({type: DELETE_EVENT,id})

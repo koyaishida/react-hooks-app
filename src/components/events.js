@@ -19,6 +19,7 @@ const Events = ()=>{
 
         <tbody>
           {state.map((event,index)=>
+          // ここでstateの配列をeventとしてprops経由でEventのcomponentに渡している
           (<Event key={index} event={event}/>))}
         </tbody>
       </table>
