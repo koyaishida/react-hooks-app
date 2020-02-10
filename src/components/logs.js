@@ -13,13 +13,14 @@ const Logs = ()=>{
         <tr>
           <th>内容</th>
           <th>日時</th>
-          <th></th>
         </tr>
       </thead>
 
       <tbody>
-        {state.operationLogs.map((operationLogs,index)=>
-        (<Log key={index} operationLogs={operationLogs}/>))}
+        {
+          state.operationLogs.map((operationLog,index) =>
+          (<Log key={index} operationLog={operationLog}/>))
+        }
       </tbody>
     </table>
   </>
