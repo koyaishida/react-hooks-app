@@ -8,9 +8,10 @@ import AppContext from "../contexts/AppContext";
 const  App = ()=> {
   
   const initialState = {
-    events: []
+    events: [],
+    operationLogs: []
   }
-  
+
   const [state,dispatch] = useReducer(reducer,initialState)
   //この配列がeventというstate,dispatchがstateを更新する関数
   //この２つをuseContextでどこからでもアクセス可能にしている
