@@ -9,7 +9,6 @@ const Event = ({event})=>{
   const id = event.id
 
   const handleClickDeleteButton = ()=>{
-    console.log({event})
     const result = window.confirm(`id : ${id} のイベントを削除してもよろしいですか？`)
     if (result){
       dispatch({type: DELETE_EVENT,id})
